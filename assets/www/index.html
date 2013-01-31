@@ -492,7 +492,8 @@
 				  img5.src = "images/"+picid+".jpg";
 			}
 		}
-		//------Identify 50 categories-----------------
+		//------Identify 67 categories-----------------
+		/*
 		var fidArray = [" Bread (麵包) "," Fried (炸物)"," gongbao (宮保雞丁)"," noodle (麵食)"," Pizza (比薩)",
 						" salad (沙拉)", " steak (牛排)"," sushi (壽司)"," tofu (豆腐)"," friednoodle (炒麵)",
 						" friedrice (炒飯)"," hamburger (漢堡)"," jiaozi (餃子)"," curry rice (咖哩飯)"," sandwich (三明治)",
@@ -504,7 +505,8 @@
 						" tamale (塔瑪利)"," tantsi (擔仔麵)"," tart (蛋塔)"," turnipcake (蘿蔔糕)"," wontonsoup (餛飩湯)",
 						" stinkytofu (臭豆腐)"," poutine (乾酪肉汁薯條)"," fried fish&fries(炸魚薯條)"," hainanchi (海南雞飯)"," papayasalad (青木瓜司沙拉)"
 						];
-						
+		*/
+		/*				
 		var imgArray = [ 1, 2, 3, 4, 5,
 						 6,7,8,9,10,
 						 11,12,13,14,15,
@@ -516,9 +518,28 @@
 						 42,43,44,47,48,
 						 49,50,51,52,53						
 					   ];
+		*/
+		var fidArray = [
+			"01_bread","02_fried","03_gongbao","04_noodle","05_pizza",
+			"06_salad","07_steak","08_sushi","09_tofu","10_friednoodle",
+			"11_friedrice","12_hamburger","13_jiaozi","14_karerice","15_sandwich",
+			"16_sashimi","17_sausage","18_shrimp","19_subway","20_arepas",
+			"21_buns","22_chasiu","23_chocolate","24_corn","25_crab",
+			"26_croissants","27_currychi","28_donut","29_friedfish","30_icecream",
+			"31_koahpau","32_lasagne","33_lobster","34_omurice","35_pekingduck",
+			"36_popcorn","37_pork","38_potatochip","39_shaomai","40_springrolls",
+			"41_stuffedbun","42_tamale","43_tantsi","44_tart","45_tenbura",
+			"46_tortilla","47_turnipcake","48_wontonsoup","49_stinkytofu","50_poutine",
+			"51_friedfish","52_hainanchi","53_papayasalad","54_burnmilkpigeon","55_soupofsharksfins",
+			"56_roastsucklingpig","57_handshreddedchicken","58_hangingchicken","59_xianggankalimeris","60_braisedintestinesinbrownsauce",
+			"61_Fuqifeipian","62_smokedduck","63_flavoredpork","64_boiledbeef","65_changshastinkytofu",
+			"66_scrapingjelly","67_duojiaoyutou"
+		];
+		
 		function showRes(fid,topfive){
 			
-			showName(topfive,fidArray[fid-1],imgArray[fid-1]);			
+			//showName(topfive,fidArray[fid-1],imgArray[fid-1]);
+			showName(topfive,fidArray[fid-1],fid);			
 			
 		}
 			
