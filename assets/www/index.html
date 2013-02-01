@@ -1,4 +1,9 @@
-﻿<!DOCTYPE HTML>
+﻿<!--
+	Food Recognition
+	categories: 67
+	upload image: color	
+-->
+<!DOCTYPE HTML>
 <html>
 	
 <head>
@@ -23,9 +28,11 @@
     	 var pictureSource;   
     	 var destinationType;
     	 //server for color image
-    	 var serverURL = "http://cml18.csie.ntu.edu.tw/~larry61410/server_shane/";
+    	 //var serverURL = "http://cml18.csie.ntu.edu.tw/~larry61410/server_shane/";
     	 //server for gray-scale image
-    	 //var serverURL = "http://cml18.csie.ntu.edu.tw/~larry61410/server_1010/";  
+    	 //var serverURL = "http://cml18.csie.ntu.edu.tw/~larry61410/server_1010/";
+    	 //server for 67 categories
+    	 var serverURL = "http://cml18.csie.ntu.edu.tw/~moonblack/server_food/";  
     	 var resultURL = "";    	
          var uploadURL = serverURL+"upload.php"
          var uploadURL_RGB_feature = serverURL+"upload_RGB_feature.php"
