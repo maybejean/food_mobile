@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package csie.ntu.foodRec.client;
+package csie.ntu.foodRec.client_67_color;
 
 public final class R {
     public static final class attr {

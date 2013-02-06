@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="csie.ntu.foodRec.client"
-    android:versionCode="78"
-    android:versionName="0.78 102212" >
+    package="csie.ntu.foodRec.client_67_color"
+    android:versionCode="1"
+    android:versionName="0.1 020613" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -31,7 +31,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".FoodRecognition"
+            android:name="csie.ntu.foodRec.client.FoodRecognition"
             android:label="@string/title_activity_food_recognition" 
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>

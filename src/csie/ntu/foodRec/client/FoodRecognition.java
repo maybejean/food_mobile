@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
+import csie.ntu.foodRec.client_67_color.R;
 
 
 public class FoodRecognition extends DroidGap {
