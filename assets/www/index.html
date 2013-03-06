@@ -46,7 +46,7 @@
     	 var XMLHttpRequestObject = false;
   		 XMLHttpRequestObject = new XMLHttpRequest();
   		 var spinner;
-  		
+  		 var currentTime = 0,mobileTime=0,serverTime=0;
     	 // Wait for PhoneGap to connect with the device
     	 //
     	 document.addEventListener("deviceready",onDeviceReady,false);
@@ -203,7 +203,8 @@
 	        		parentEntry = new DirectoryEntry('ntufrs',parent); 
     		    
     		    alert("This may take a while,please wait...");
-    		    
+    		    var d = new Date();
+    		    currentTime = d.getTime();
     		    //Image pre-processing...
 	        	mainString.innerText="Image pre-processing";
     		    		
@@ -347,7 +348,10 @@
    		 function uploadPicture(imageURI) {
 	
 	        	if (uploadURL) {
-	        	
+	        		var d = new Date();
+	    		    var tmp = d.getTime();
+		        	mobileTime = tmp - currentTime;
+	    		    currentTime = d.getTime();
 	        	//uploading image...
 				mainString.innerText="Uploading image and Server side processing";
 	        	
@@ -560,8 +564,13 @@
         	 	var out = reader.result;
 				outArray = out.split("/");
 		
-		
-					mainString.innerText="Result: \n";
+					var d = new Date();
+    		    	var tmp = d.getTime();
+	        		serverTime = tmp - currentTime;
+					mainString.innerText="Moblie processing time "+  mobileTime/1000 +" sec.\n"+  "Server processing and transfer time "+ serverTime/1000 +" sec.\n"+ 
+					"Total costs " + (mobileTime+serverTime)/1000 +" sec.\n"+"---------------------------\n"+"Result: \n";
+				
+					//mainString.innerText="Result: \n";
 					//mainString.innerText = mainString.innerText +"Top1: \n";					
 					
 					//-----Top1-----
